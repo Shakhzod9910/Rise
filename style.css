@@ -1,0 +1,1821 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+ @import url('https://fonts.cdnfonts.com/css/museo-sans-rounded');
+
+                
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    margin-top: 55px;
+    
+}
+.nav{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+.menu-in, .menu-out{
+    display: none;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+
+}
+
+.links ul{
+    display: flex;
+    list-style: none;
+}
+
+
+
+.links ul li a{
+    font-family: 'Museo Sans Rounded', sans-serif;
+    color: #242A2B;
+    margin-left: 50px;
+    text-decoration: none;  
+    display: flex;
+    /* font-size: 17px; */
+    flex-direction: column;
+    /* align-items: center;
+    position: relative;    
+    transition: all 0.3s ease; */
+}
+/* .links ul li:hover a::after {
+    content: "";
+    width: 36px;
+    height: 4px;
+    background-color: #86BC25;
+    display: block;
+    border-radius: 2px;
+    top: 29px;
+    position: absolute;
+    transition: all 0.3s ease;  
+} */
+
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-wrapper button{
+    font-family: 'Museo Sans Rounded', sans-serif;
+    padding: 16px 50px;
+    background-color: #86BC25;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-size: 17px;
+    color: white;
+    outline: none;
+    margin-left: 32px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+
+.nav-wrapper button:hover{
+    border: 1px solid #86BC25;
+    background-color: #fff;
+    color: #86BC25;
+}
+
+.contacts{
+    display: flex;
+    margin-bottom: 55px;
+}
+
+.contacts span{
+    display: flex;
+    align-items: center;
+    font-family: 'Museo Sans Rounded', sans-serif;
+    margin-left: 9px;
+    
+
+}
+
+.contacts span img{
+    margin-right: 9px;
+    margin-left: 28px;
+}
+.header-wrapper{
+    overflow: hidden;
+    height: 740px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid transparent;
+    
+}
+
+.header .left{
+    max-width: 475px;
+}
+.header .right{
+    /* border: 1px solid blue; */
+    /* position: relative; */
+}
+
+.header .right img{
+    position: absolute;
+    right: -85px;
+    
+}
+
+.header .left h1{
+    font-family: 'Museo Sans Rounded', sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+    margin-top: 95px;
+    margin-bottom: 26px;
+    color: #242A2B;
+
+}
+
+.header .left p{
+    font-family: 'Museo Sans Rounded', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 37px;
+
+}
+
+.header .left button{
+    font-family: 'Museo Sans Rounded', sans-serif;
+    padding: 16px 50px;
+    background-color: #86BC25;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: lighter;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+
+.header .left button:hover{
+    border: 1px solid #86BC25;
+    background-color: #fff;
+    color: #86BC25;
+}
+
+.about-wrapper{
+    overflow: hidden;
+}
+
+.about{
+    margin-top: -160px;
+    background-color: #FAFAFA;
+    padding: 96px 0;
+}
+
+.about h1{
+    margin-bottom: 50px;
+    font-size: 40px;
+    color:#242A2B;
+    font-family: 'Museo Sans Rounded', sans-serif;
+    font-weight: 500px;
+}
+
+
+.textbox{
+    display: flex;
+}
+.textbox p{
+    margin-right: 87px;
+    max-width: 520px;
+    font-family: 'Museo Sans Rounded', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 30px;
+
+}
+
+.textbox button{
+    font-family: 'Museo Sans Rounded', sans-serif;
+    padding: 16px 50px;
+    background-color: #0095DB;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: lighter;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    
+}
+
+.textbox button:hover{
+    border: 1px solid #0095DB;
+    background-color: #fff;
+    color: #0095DB;
+}
+
+.franchise{
+    padding-top: 85px;
+    
+}
+.franchise h2{
+    font-family: 'Museo Sans Rounded', sans-serif;
+    font-size: 40px;
+    color: #242A2B;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 46px;
+}
+.franchise p{
+    max-width: 722px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Museo Sans Rounded', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #242A2B;
+    margin-bottom: 23px;
+
+}
+.but{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.franchise button{
+
+    font-family: 'Museo Sans Rounded', sans-serif;
+    padding: 16px 50px;
+    background-color: #86BC25;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: lighter;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: sticky;
+    right: 0;
+    left: 0;
+    
+    
+}
+
+.franchise button:hover{
+    border: 1px solid #86BC25;
+    background-color: #fff;
+    color: #86BC25;
+}
+
+.video-frame{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 656px
+}
+
+
+.video-frame img{
+    position: absolute;
+}
+
+.video-frame iframe{
+    width: 792px;
+    height: 446px;
+    z-index: 3;
+    background-image: url(/img/logo-black.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.video-frame .yellow{
+    bottom: 30px;
+    left: 0;
+}
+
+.video-frame .green{
+    bottom: 0px;
+    left: 160px;
+}
+.video-frame .red{
+    top: 0px;
+    right: 30px;
+}
+.video-frame .blue{
+    top: 160px;
+    right: 0px;
+}
+
+.take-part{
+    background-image: url(img/take.png);
+    background-size: cover;
+    padding: 62px 0 82px 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(229, 0, 81, 0.84);
+    position: relative;
+    
+}
+.take-part::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(229, 0, 81, 0.84);
+}
+
+.take-part h1{
+    margin-bottom: 29px;
+    font-weight: normal;
+    font-family: 'Museo Sans Rounded', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.take-part p{
+    margin-bottom: 31px;
+    margin-bottom: 29px;
+    font-weight: normal;
+    font-family: 'Museo Sans Rounded', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    max-width: 642px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+   
+}
+
+.take-part button{
+    font-family: 'Museo Sans Rounded', sans-serif;
+    padding: 16px 50px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: lighter;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    color: #242A2B;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.contact{
+    overflow: hidden;
+}
+        
+.contact-wrapper{
+    padding-top: 75px;
+}
+    
+.contact-wrapper h1{
+    font-family: 'Museo Sans Rounded', sans-serif;
+    font-size: 40px;
+    color: #242A2B;
+    font-weight: normal;
+    max-width: 475px;
+    margin-bottom: 11px;
+}
+
+.input-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    
+}
+
+.input-wrapper label{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Museo Sans Rounded', sans-serif;
+    color: #242A2B;
+    font-size: 17px;
+    margin-right: 18px !important;
+    max-width: 505px;
+}
+
+.input-wrapper input{
+    width: 505px;
+    height: 50px;
+    border-radius: 9px;
+    outline:none;
+    border: 2px solid #86BC25;
+    margin-top: 7px;
+    margin-bottom: 18px;
+    padding: 10px;
+    
+}
+
+.contact-wrapper span{
+    font-family: 'Museo Sans Rounded', sans-serif;
+    color: #242A2B;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 26px;
+}
+
+.contact-wrapper .checkboxes{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+     
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+  }
+
+  .custom-checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 39px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 27px;
+    font-family: 'Museo Sans Rounded', sans-serif;
+    color: #242A2B;
+    font-size: 17px;
+    font-weight: lighter;
+    margin-right: 63px;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 27px;
+    width: 27px;
+    border: 2px solid #86BC25;
+    border-radius: 5px;
+    
+  }
+
+  .custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-image: url(img/check.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  }
+
+
+
+.contact-wrapper .textarea{
+    display: block;
+    font-family: 'Museo Sans Rounded', sans-serif;
+    color: #242A2B;
+    font-size: 17px;
+    margin-top: 31px;
+    margin-bottom: 7px;
+}
+
+.contact-wrapper textarea{
+    display: block;
+    max-width: 1026px;
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    border: 2px solid #86BC25;
+    border-radius: 9px;
+    resize: none;
+    outline: none;
+    margin-bottom: 53px;
+}
+
+
+
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+  }
+
+  .custom-checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 27px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 28px;
+    height: 15px;
+    font-family: 'Museo Sans Rounded', sans-serif;
+    color: #242A2B;
+    font-size: 14px;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #86BC25;
+    border-radius: 3px;
+    
+  }
+
+  .custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-image: url(img/check.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  }
+
+/* .confirm-checkbox input{
+    margin-right: 12px;
+    border: 1px solid red;
+    
+} */
+
+.description{
+    font-family: 'Museo Sans Rounded', sans-serif;
+    color: #242A2B;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: underline;
+    margin-top: 23px;
+    margin-bottom: 12px;
+}
+
+.description-p{
+    font-family: 'Museo Sans Rounded', sans-serif;
+    color: #242A2B;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 55px;
+
+}
+
+form button{
+    font-family: 'Museo Sans Rounded', sans-serif;
+    padding: 16px 50px;
+    background-color: #86BC25;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: lighter;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+
+form button:hover{
+    border: 1px solid #86BC25;
+    background-color: #fff;
+    color: #86BC25;
+}
+
+.contact-wrapper{
+    position: relative;
+    padding-bottom: 119px;
+}
+
+.contact img{
+    position: absolute;
+    bottom: 0;
+    right: -71px;
+}
+
+footer{
+    
+    background-color: #242A2B;
+    padding-bottom: 20px;
+
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .social-media{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+footer .social-media span{
+    font-family: 'Museo Sans Rounded', sans-serif;
+    color: #fff;
+    font-size: 17px;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+footer .social-media .number{
+    margin-left: 5px;
+}
+
+footer .social-media span img{
+    margin-right: 18px;
+}
+
+footer .social-media ul{
+    display: flex;
+    list-style: none;
+    margin-top: 26px;
+    margin-bottom: 38px;
+}
+footer .social-media ul li{
+    margin-right: 20px;
+}
+
+footer .social-media p{
+    font-family: 'Museo Sans Rounded', sans-serif;
+    color: #fff;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1250px){
+
+    .container{
+        /* max-width: 1100px; */
+    }
+
+    .nav{
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+    
+    }
+    
+    .links ul{
+        display: flex;
+        list-style: none;
+    }
+    
+    
+    
+    .links ul li a{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        color: #242A2B;
+        margin-left: 30px;
+        text-decoration: none;  
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+        position: relative;    
+        transition: all 0.3s ease; */
+    }
+    /* .links ul li:hover a::after {
+        content: "";
+        width: 36px;
+        height: 4px;
+        background-color: #86BC25;
+        display: block;
+        border-radius: 2px;
+        top: 29px;
+        position: absolute;
+        transition: all 0.3s ease;  
+    } */
+    
+    .nav-wrapper{
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    .nav-wrapper button{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        padding: 12px 20px;
+        background-color: #86BC25;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        font-size: 14px;
+        color: white;
+        outline: none;
+        margin-left: 32px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+    }
+    
+    .nav-wrapper button:hover{
+        border: 1px solid #86BC25;
+        background-color: #fff;
+        color: #86BC25;
+    }
+    
+    .contacts{
+        display: flex;
+        margin-bottom: 55px;
+    }
+    
+    .contacts span{
+        display: flex;
+        align-items: center;
+        font-family: 'Museo Sans Rounded', sans-serif;
+        margin-left: 9px;
+        
+    
+    }
+    
+    .contacts span img{
+        margin-right: 9px;
+        margin-left: 28px;
+    }
+    .header-wrapper{
+        overflow: hidden;
+        height: 570px;
+    }
+
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border: 1px solid transparent;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .header .left{
+        max-width: 475px;
+    }
+    .header .right{
+        /* border: 1px solid blue; */
+        /* position: relative; */
+    }
+    
+    .header .right img{
+        position: absolute;
+        right: -45px;
+        width: 600px;
+        
+    }
+    
+    .header .left h1{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        font-weight: normal;
+        font-size: 50px;
+        margin-top: 95px;
+        margin-bottom: 26px;
+        color: #242A2B;
+    
+    }
+    
+    .header .left p{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+        margin-bottom: 37px;
+    
+    }
+    
+    .header .left button{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        padding: 16px 50px;
+        background-color: #86BC25;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        font-size: 17px;
+        font-weight: lighter;
+        color: white;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+    }
+
+
+
+
+    .about{
+        margin-top: -130px;
+        background-color: #FAFAFA;
+        padding: 96px 50px;
+    }
+    
+    .about h1{
+        margin-bottom: 50px;
+        font-size: 40px;
+        color:#242A2B;
+        font-family: 'Museo Sans Rounded', sans-serif;
+        font-weight: lighter;
+    }
+    
+    
+    .textbox{
+        display: flex;
+    }
+    .textbox p{
+        margin-right: 87px;
+        max-width: 550px;
+        font-family: 'Museo Sans Rounded', sans-serif;
+        font-weight: lighter;
+        font-size: 20px;
+        line-height: 30px;
+    
+    }
+    
+    .textbox button{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        padding: 16px 50px;
+        background-color: #0095DB;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        font-size: 17px;
+        font-weight: lighter;
+        color: white;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+        
+    }
+
+
+    .franchise{
+        padding-top: 85px;
+        padding-right: 40px;
+        padding-left: 40px;
+        
+    }
+    .franchise h2{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        font-size: 40px;
+        color: #242A2B;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 46px;
+    }
+    .franchise p{
+        max-width: 722px;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: 'Museo Sans Rounded', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        color: #242A2B;
+        margin-bottom: 23px;
+    
+    }
+    .but{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .franchise button{
+    
+        font-family: 'Museo Sans Rounded', sans-serif;
+        padding: 16px 50px;
+        background-color: #86BC25;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        font-size: 17px;
+        font-weight: lighter;
+        color: white;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: sticky;
+        right: 0;
+        left: 0;
+        
+        
+    }
+    
+    .franchise button:hover{
+        border: 1px solid #86BC25;
+        background-color: #fff;
+        color: #86BC25;
+    }
+    
+    .video-frame{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 656px
+    }
+    
+    
+    .video-frame img{
+        position: absolute;
+    }
+    
+    .video-frame iframe{
+        width: 662px;
+        height: 446px;
+        z-index: 3;
+        background-image: url(/img/logo-black.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-color: #fff;
+    }
+    .video-frame .yellow{
+        bottom: 30px;
+        left: 0;
+    }
+    
+    .video-frame .green{
+        bottom: 0px;
+        left: 160px;
+    }
+    .video-frame .red{
+        top: 0px;
+        right: 30px;
+    }
+    .video-frame .blue{
+        top: 160px;
+        right: 0px;
+    }
+
+
+
+    .contact-wrapper{
+        padding-top: 75px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+        
+    .contact-wrapper h1{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        font-size: 40px;
+        color: #242A2B;
+        font-weight: normal;
+        max-width: 475px;
+        margin-bottom: 11px;
+    }
+    
+    .input-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+        
+    }
+    
+    .input-wrapper label{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Museo Sans Rounded', sans-serif;
+        color: #242A2B;
+        font-size: 17px;
+        margin-right: 18px !important;
+        max-width: 505px;
+    }
+    
+    .input-wrapper input{
+        width: 505px;
+        height: 50px;
+        border-radius: 9px;
+        outline:none;
+        border: 2px solid #86BC25;
+        margin-top: 7px;
+        margin-bottom: 18px;
+        padding: 10px;
+        
+    }
+    
+    .contact-wrapper span{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        color: #242A2B;
+        font-size: 17px;
+        display: block;
+        margin-bottom: 26px;
+    }
+    
+    .contact-wrapper .checkboxes{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+         
+    }
+    .contact-wrapper .textarea{
+        display: block;
+        font-family: 'Museo Sans Rounded', sans-serif;
+        color: #242A2B;
+        font-size: 17px;
+        margin-top: 31px;
+        margin-bottom: 7px;
+    }
+    
+    .contact-wrapper textarea{
+        display: block;
+        max-width: 1026px;
+        width: 100%;
+        height: 120px;
+        padding: 10px;
+        border: 2px solid #86BC25;
+        border-radius: 9px;
+        resize: none;
+        outline: none;
+        margin-bottom: 53px;
+    }
+    .description{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        color: #242A2B;
+        font-size: 14px;
+        font-weight: normal;
+        text-decoration: underline;
+        margin-top: 23px;
+        margin-bottom: 12px;
+    }
+    
+    .description-p{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        color: #242A2B;
+        font-size: 12px;
+        font-weight: normal;
+        margin-bottom: 55px;
+    
+    }
+    
+    form button{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        padding: 16px 50px;
+        background-color: #86BC25;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        font-size: 17px;
+        font-weight: lighter;
+        color: white;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+    }
+    
+    form button:hover{
+        border: 1px solid #86BC25;
+        background-color: #fff;
+        color: #86BC25;
+    }
+    
+    .contact-wrapper{
+        position: relative;
+        padding-bottom: 119px;
+    }
+    
+    .contact img{
+        position: absolute;
+        width: 400px;
+        bottom: 0;
+        right: -71px;
+    }
+
+    footer{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1120px){
+
+    .container{
+        /* max-width: 1100px; */
+    }
+
+    .nav{
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    .menu-in{
+        width: 40px;
+        position: sticky;
+        z-index: 4;
+        right: 40px;
+        
+        
+    }
+    .menu-out{
+        position: fixed;
+        z-index: 4;
+        width: 40px;
+        right: 40px;
+    }
+    .active{
+        display: flex;
+    }
+    .logo-img{
+        width: 100px;
+    }
+
+
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+        /* display: none; */
+        position: fixed;
+        height: 100%;
+        width:  100%;
+        bottom: 0;
+        z-index: 4;
+        right: 0;
+        top: 0;
+        padding-top: 200px; 
+        background-color: #FAFAFA;
+        left: -100%;
+        transition: all 0.3s ease;
+
+    }
+
+    .active-menu{
+        left: 0;
+    }
+
+
+
+    .links .contacts{
+        flex-direction: column;
+        height: 60px;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        width: 270px;
+    }
+    
+    .links .contacts span img{
+        margin-left: 0;
+    }
+    .links .contacts span{
+        margin-left: 0;
+    }
+
+    .links .nav-wrapper{
+        flex-direction: column;
+    }
+    
+    .links ul{
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        position: relative;
+        width: 270px;
+    }
+    
+    
+    
+    .links ul li a{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        color: #242A2B;
+        margin-left: 0px;
+        margin-bottom: 34px;
+        text-decoration: none;  
+        display: flex;
+        font-size: 24px;
+        flex-direction: column;
+    }
+    
+    .nav-wrapper{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-btn{
+        width: 270px;
+    }
+    
+    
+    .nav-wrapper button{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        padding: 12px 20px;
+        background-color: #86BC25;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        font-size: 14px;
+        color: white;
+        outline: none;
+        margin-left: 0px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: block;
+        margin-top: 20px;
+        
+    }
+
+    .header-wrapper{
+        overflow: hidden;
+        height: 560px;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border: 1px solid transparent;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .header .left{
+        max-width: 475px;
+    }
+    .header .right{
+        /* border: 1px solid blue; */
+        /* position: relative; */
+    }
+    
+    .header .right img{
+        position: absolute;
+        right: -35px;
+        width: 600px;
+        
+    }
+    
+    .header .left h1{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        font-weight: normal;
+        font-size: 30px;
+        margin-top: 95px;
+        margin-bottom: 26px;
+        color: #242A2B;
+        width: 300px;
+        position: relative;
+        z-index: 2;
+    
+    }
+    
+    .header .left p{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: 37px;
+        width: 300px;
+        position: relative;
+        z-index: 2;
+    
+    }
+    
+    .header .left button{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        padding: 12px 30px;
+        background-color: #86BC25;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: lighter;
+        color: white;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        z-index: 2;
+        
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+@media(max-width:742px){
+
+    .about{
+        margin-top: -120px;
+        background-color: #FAFAFA;
+        padding: 40px;
+
+    }
+    
+    .about h1{
+        margin-bottom: 50px;
+        font-size: 40px;
+        color:#242A2B;
+        font-family: 'Museo Sans Rounded', sans-serif;
+        font-weight: lighter;
+    }
+    
+    
+    .textbox{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .textbox p{
+        margin-right: 0px;
+        max-width: 520px;
+        font-family: 'Museo Sans Rounded', sans-serif;
+        font-weight: lighter;
+        font-size: 14px;
+        line-height: 30px;
+    
+    }
+    
+    .textbox button{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        padding: 12px 20px;
+        background-color: #0095DB;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: lighter;
+        color: white;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+        
+    }
+
+    .franchise{
+        padding-top: 85px;
+        
+    }
+    .franchise h2{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        font-size: 28px;
+        color: #242A2B;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 46px;
+    }
+    .franchise p{
+        max-width: 722px;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: 'Museo Sans Rounded', sans-serif;
+        font-size: 14px;
+        text-align: center;
+        color: #242A2B;
+        margin-bottom: 23px;
+    
+    }
+    .but{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .franchise button{
+    
+        font-family: 'Museo Sans Rounded', sans-serif;
+        padding: 12px 20px;
+        background-color: #86BC25;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: lighter;
+        color: white;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: sticky;
+        right: 0;
+        left: 0;
+        
+        
+    }
+    
+    
+    
+    .video-frame{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 356px;
+        
+    }
+    
+    
+    .video-frame img{
+        position: absolute;
+    }
+    
+    .video-frame iframe{
+        width: 300px;
+        height: 200px;
+        z-index: 3;
+        background-image: url(/img/logo-black.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-color: #fff;
+    }
+    .video-frame .yellow{
+        bottom: 190px;
+        left: 50px;
+        width: 80px;
+    }
+    
+    .video-frame .green{
+        bottom: 210px;
+        left: 70px;
+        width: 120px;
+    }
+    .video-frame .red{
+        top: 180px;
+        right: 70px;
+        width: 120px;
+
+    }
+    .video-frame .blue{
+        top: 160px;
+        right: 30px;
+        width: 80px;
+    }
+
+
+
+    .take-part{
+        background-image: url(img/take.png);
+        background-size: cover;
+        padding: 62px 0 82px 0;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(229, 0, 81, 0.84);
+        position: relative;
+        padding-right: 40px;
+        padding-left: 40px;
+        
+    }
+    .take-part::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 1;
+        background-color: rgba(229, 0, 81, 0.84);
+    }
+    
+    .take-part h1{
+        margin-bottom: 29px;
+        font-weight: normal;
+        font-family: 'Museo Sans Rounded', sans-serif;
+        font-size: 28px;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        
+    }
+    
+    .take-part p{
+        margin-bottom: 31px;
+        margin-bottom: 29px;
+        font-weight: normal;
+        font-family: 'Museo Sans Rounded', sans-serif;
+        font-size: 14px;
+        color: #fff;
+        max-width: 642px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+       
+    }
+    
+    .take-part button{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        padding: 12px 20px;
+        background-color: #fff;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: lighter;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+        color: #242A2B;
+        position: relative;
+        z-index: 2;
+        
+    }
+
+
+
+    .contact-wrapper{
+        padding-top: 75px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+        
+    .contact-wrapper h1{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        font-size: 28px;
+        color: #242A2B;
+        font-weight: normal;
+        max-width: 475px;
+        margin-bottom: 11px;
+    }
+    
+    .input-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+        
+    }
+    
+    .input-wrapper label{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Museo Sans Rounded', sans-serif;
+        color: #242A2B;
+        font-size: 14px;
+        margin-right: 18px !important;
+        max-width: 505px;
+    }
+    
+    
+    .contact-wrapper span{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        color: #242A2B;
+        font-size: 14px;
+        display: block;
+        margin-bottom: 26px;
+    }
+    
+    .contact-wrapper .checkboxes{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+         
+    }
+    .contact-wrapper .textarea{
+        display: block;
+        font-family: 'Museo Sans Rounded', sans-serif;
+        color: #242A2B;
+        font-size: 14px;
+        margin-top: 31px;
+        margin-bottom: 7px;
+    }
+    
+    .contact-wrapper textarea{
+        display: block;
+        max-width: 1026px;
+        width: 100%;
+        height: 120px;
+        padding: 10px;
+        border: 2px solid #86BC25;
+        border-radius: 5px;
+        resize: none;
+        outline: none;
+        margin-bottom: 53px;
+    }
+    .description{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        color: #242A2B;
+        font-size: 12px;
+        font-weight: normal;
+        text-decoration: underline;
+        margin-top: 23px;
+        margin-bottom: 12px;
+    }
+    
+    .description-p{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        color: #242A2B;
+        font-size: 12px;
+        font-weight: normal;
+        margin-bottom: 55px;
+    
+    }
+    
+    form button{
+        font-family: 'Museo Sans Rounded', sans-serif;
+        padding: 12px 20px;
+        background-color: #86BC25;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: lighter;
+        color: white;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+    }
+    
+    form button:hover{
+        border: 1px solid #86BC25;
+        background-color: #fff;
+        color: #86BC25;
+    }
+    
+    .contact-wrapper{
+        position: relative;
+        padding-bottom: 119px;
+    }
+
+
+
+    .input-wrapper input{
+        max-width: 80vw !important;
+        height: 30px;
+        border-radius: 5px;
+        outline:none;
+        border: 2px solid #86BC25;
+        margin-top: 7px;
+        margin-bottom: 18px;
+        padding: 10px;
+        
+    }
+    .contact img{
+        position: absolute;
+        width: 200px;
+        bottom: 0;
+        right: -71px;
+    }
+    .custom-checkbox {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-left: 27px;
+        cursor: pointer;
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 28px;
+        height: 15px;
+        font-family: 'Museo Sans Rounded', sans-serif;
+        color: #242A2B;
+        font-size: 10px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        
+      }
+
+      footer .white-logo{
+        width: 100px;
+        height: 100px;
+        margin-top: 50px;
+      }
+
+      footer .footer-wrapper{
+        flex-direction: column;
+      }
+
+      footer .social-media p{
+        font-size: 14px;
+      }
+      footer .social-media span{
+        font-size: 12px;
+      }
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:562px){
+    .header-wrapper{
+        overflow: hidden;
+        height: 760px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        border: 1px solid transparent;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .header .left{
+        max-width: 475px;
+        margin-bottom: 30px;
+    }
+    .header .right{
+        /* border: 1px solid blue; */
+        /* position: relative; */
+    }
+    
+    .header .right img{
+        position: absolute;
+        right: -15px;
+        width: 360px;
+        
+    }
+
+
+    .video-frame .yellow{
+        bottom: 190px;
+        left: -50px;
+        width: 80px;
+    }
+    
+    .video-frame .green{
+        bottom: 210px;
+        left: -70px;
+        width: 120px;
+    }
+    .video-frame .red{
+        top: 180px;
+        right: -70px;
+        width: 120px;
+
+    }
+    .video-frame .blue{
+        top: 160px;
+        right: -30px;
+        width: 80px;
+    }
+}
